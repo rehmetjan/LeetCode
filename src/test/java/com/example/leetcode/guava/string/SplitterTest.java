@@ -1,4 +1,4 @@
-package com.example.guava.string;
+package com.example.leetcode.guava.string;
 
 import com.google.common.base.Splitter;
 import org.junit.jupiter.api.Test;

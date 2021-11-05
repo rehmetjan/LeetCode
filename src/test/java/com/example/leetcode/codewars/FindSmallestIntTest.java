@@ -1,4 +1,4 @@
-package com.example.codewars;
+package com.example.leetcode.codewars;
 
 import org.junit.jupiter.api.Test;
 
@@ -29,6 +29,12 @@ class FindSmallestIntTest {
     public void testNull() {
         //assertEquals(0, FindSmallestInt.findSmallestInt(intArray));
         assertThrows(IllegalArgumentException.class, () -> FindSmallestInt.findSmallestInt(null));
+    }
+
+    @Test
+    public void test4() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> FindSmallestInt.findSmallestInt(null));
+        assertEquals(exception.getMessage(), "No solution found");
     }
 
     @Test

@@ -1,4 +1,4 @@
-package com.example.kata;
+package com.example.leetcode.kata;
 
 import java.util.ArrayList;
 import java.util.Arrays;

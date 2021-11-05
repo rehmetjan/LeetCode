@@ -1,4 +1,4 @@
-package com.example.codewars;
+package com.example.leetcode.codewars;
 
 import org.junit.jupiter.api.Test;
 

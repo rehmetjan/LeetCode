@@ -1,4 +1,4 @@
-package com.example.codewars;
+package com.example.leetcode.codewars;
 
 import java.util.Arrays;
 
