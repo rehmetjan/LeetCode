@@ -3,6 +3,7 @@
 #### Description
 My Leetcode journey (opensorce)
 problems and solution, with TDD
+
 https://leetcode-cn.com/u/rehmetjan/
 
 #### Software Architecture
@@ -10,15 +11,12 @@ Software architecture description
 
 #### Installation
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  `git clone https://gitee.com/rehmet/leetcode.git`
+
 
 #### Instructions
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  Unit test for every class
 
 #### Contribution
 

@@ -1,9 +1,12 @@
 # leetcode
 
 #### 介绍
-My Leetcode journey (opensorce)
+My Leetcode Journey (OpenSource)
 problems and solution, with TDD
+
 https://leetcode-cn.com/u/rehmetjan/
+
+
 
 #### 软件架构
 软件架构说明
@@ -11,15 +14,12 @@ https://leetcode-cn.com/u/rehmetjan/
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  `git clone https://gitee.com/rehmet/leetcode.git`
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  每个文件都有测试
+
 
 #### 参与贡献
 
