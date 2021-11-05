@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Copyright (c) 2021 by rt
  * All rights reserved.
  */
+
 class LongestCommonPrefixTest {
 
     @Test
