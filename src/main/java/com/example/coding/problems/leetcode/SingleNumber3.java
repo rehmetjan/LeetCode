@@ -43,7 +43,9 @@ public class SingleNumber3 {
         int[] ret = new int[2];
         int ct = 0;
         for (Integer key : map.keySet()) {
-            if (map.get(key) == 1) ret[ct++] = key;
+            if (map.get(key) == 1) {
+                ret[ct++] = key;
+            }
         }
         return ret;
     }
