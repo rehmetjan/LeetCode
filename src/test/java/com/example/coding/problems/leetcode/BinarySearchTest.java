@@ -22,7 +22,6 @@ class BinarySearchTest {
     public void testF() {
         BinarySearch binarySearch = new BinarySearch();
         int[] nums = {1, 12, 33, 49};
-
         System.out.println(13 / 2);
         assertEquals(1, binarySearch.search(nums, 12));
     }
@@ -31,7 +30,6 @@ class BinarySearchTest {
     public void testUnSorted() {
         BinarySearch binarySearch = new BinarySearch();
         int[] nums = {1, 12, 5, 72, 1, 49};
-
         System.out.println(13 / 2);
         assertEquals(5, binarySearch.search(nums, 49));
     }

@@ -13,7 +13,7 @@ public class Duplicate {
         Arrays.sort(nums);
         // nums = {1,2,3,5,5,7};
         for (int i = 0; i < nums.length - 1; i++) {
-            if(nums[i] == nums[i+1]) {
+            if (nums[i] == nums[i + 1]) {
                 return true;
             }
         }

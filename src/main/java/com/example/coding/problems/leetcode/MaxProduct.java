@@ -53,7 +53,7 @@ public class MaxProduct {
             count[c - 'a'] = 1;
         }
         for (char c : word2.toCharArray()) {
-            if (count[c-'a']==1) {
+            if (count[c - 'a'] == 1) {
                 return true;
             }
         }
