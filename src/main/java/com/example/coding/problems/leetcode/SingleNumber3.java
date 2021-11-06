@@ -1,5 +1,8 @@
 package com.example.coding.problems.leetcode;
 
+import java.util.Arrays;
+import java.util.HashMap;
+
 /**
  * author: rt
  * Copyright (c) 2021 by rt
@@ -29,6 +32,39 @@ package com.example.coding.problems.leetcode;
 
 public class SingleNumber3 {
     public static int[] singleNumber(int[] nums) {
-        return new int[]{3, 5};
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int num : nums) {
+            if (map.containsKey(num)) {
+                map.replace(num, map.get(num) + 1);
+            } else {
+                map.put(num, 1);
+            }
+        }
+        int[] ret = new int[2];
+        int ct = 0;
+        for (Integer key : map.keySet()) {
+            if (map.get(key) == 1) ret[ct++] = key;
+        }
+        return ret;
+    }
+
+    public static int[] singleNumber2(int[] nums) {
+        Arrays.sort(nums);
+        int len = nums.length;
+        int[] result = new int[2];
+        for (int i = 0; i < len; ) {
+            if (i != len - 1 && nums[i] == nums[i + 1]) {
+                i += 2;
+            } else {
+                if (result[0] == 0) {
+                    result[0] = nums[i];
+                } else {
+                    result[1] = nums[i];
+                }
+                i++;
+            }
+        }
+        return result;
     }
 }
+

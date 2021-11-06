@@ -18,4 +18,19 @@ class SingleNumber3Test {
         int[] expected = new int[]{3, 5};
         assertArrayEquals(expected, SingleNumber3.singleNumber(nums));
     }
+
+    @Test
+    public void test2() {
+        int[] nums = new int[]{-1, 0};
+        int[] expected = new int[]{-1, 0};
+        assertArrayEquals(expected, SingleNumber3.singleNumber(nums));
+    }
+
+    @Test
+    public void test3() {
+        int[] nums = new int[]{0, 1};
+        int[] expected = new int[]{0, 1};
+        assertArrayEquals(expected, SingleNumber3.singleNumber(nums));
+    }
+
 }
