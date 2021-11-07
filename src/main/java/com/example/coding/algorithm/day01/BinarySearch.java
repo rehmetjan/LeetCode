@@ -65,9 +65,9 @@ public class BinarySearch {
         int l = 0;
         while (l <= r) {
             int m = (l + r) >>> 1;
-            if (n[m] > t) r = m - 1;
+            if (n[m] == t) return m;
+            else if (n[m] > t) r = m - 1;
             else if (n[m] < t) l = m + 1;
-            else return m;
         }
         return -1;
     }
