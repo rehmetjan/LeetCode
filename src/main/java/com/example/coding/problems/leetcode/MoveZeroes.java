@@ -48,6 +48,7 @@ public class MoveZeroes {
         nums[right] = temp;
     }
 
+    // Time O(n), Space O(n)
     public void mvZero(int[] nums) {
         int[] temp = new int[nums.length];
         int j = 0;
@@ -58,5 +59,18 @@ public class MoveZeroes {
             }
         }
         System.arraycopy(temp, 0, nums, 0, nums.length);
+    }
+
+    // Time O(n), Space O(n)
+    public void mvZeroes(int[] nums) {
+        int j = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                int tmp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = tmp;
+                j++;
+            }
+        }
     }
 }
