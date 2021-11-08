@@ -19,30 +19,19 @@ package com.example.coding.problems.leetcode;
  */
 public class MaximumSubArray {
     public static void main(String[] args) {
-        int max = Math.max(2, 7);
-
-        System.out.println(Math.PI);
-        System.out.println(max);
+        MaximumSubArray maximumSubArray = new MaximumSubArray();
+        int[] nums = new int[]{-1, 9, 3, -1};
+        int i = maximumSubArray.maxSubArray(nums);
+        System.out.println(i);
     }
 
-
     public int maxSubArray(int[] nums) {
-        // for (int i = 1; i < nums.length; i++) {
-        //     nums[i] = Math.max(nums[i], nums[i] + nums[i-1]);
-        // }
-
-        // int max = nums[0];
-        // for (int i = 1; i < nums.length; i++) {
-        //     max = Math.max(nums[i], max);
-        // }
-
-        // return max;
-        int pre = 0, maxAns = nums[0];
-        for (int x : nums) {
-            pre = Math.max(pre + x, x);
-            maxAns = Math.max(maxAns, pre);
+        int previous = 0;
+        int max = nums[0];
+        for (int num : nums) {
+            previous = Math.max(previous + num, num);
+            max = Math.max(max, previous);
         }
-        return maxAns;
-
+        return max;
     }
 }
