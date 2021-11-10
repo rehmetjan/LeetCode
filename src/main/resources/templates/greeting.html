@@ -2,9 +2,23 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Getting Started: Serving Web Content</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
 <p th:text="'Hello, ' + ${name} + '!'">Hello, Demo</p>
+
+<h1>Form</h1>
+<form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
+    <p>Id: <input type="text" th:field="*{id}"/></p>
+    <p>Message: <input type="text" th:field="*{content}"/></p>
+
+    <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
+</form>
+
+
+<p>Please input any number to reverse</p>
+<input type="text" th:id="textToReverse" th:type="text" th:value="${name}">
+<button type="button" th:id="reverseButton">Reverse</button>
+<p th:text="${reverseNumber}">0</p>
 </body>
 </html>

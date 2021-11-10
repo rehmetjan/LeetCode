@@ -1,5 +1,7 @@
 package com.example.coding.problems.leetcode;
 
+import org.springframework.stereotype.Component;
+
 /**
  * author: rt
  * Copyright (c) 2021 by rt
@@ -49,6 +51,7 @@ package com.example.coding.problems.leetcode;
  *
  */
 
+@Component
 public class ReverseInt {
 
     public static void main(String[] args) {
