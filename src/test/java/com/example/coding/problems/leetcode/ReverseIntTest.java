@@ -18,4 +18,17 @@ class ReverseIntTest {
         assertEquals(21, reverse);
     }
 
+    @Test
+    public void test2() {
+        ReverseInt reverseInt = new ReverseInt();
+        int reverse = reverseInt.reverse(129);
+        assertEquals(921, reverse);
+    }
+
+    @Test
+    public void test3() {
+        ReverseInt reverseInt = new ReverseInt();
+        int reverse = reverseInt.reverse(8129);
+        assertEquals(9218, reverse);
+    }
 }
