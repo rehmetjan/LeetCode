@@ -50,6 +50,16 @@ package com.example.coding.problems.leetcode;
  */
 
 public class ReverseInt {
+
+    public static void main(String[] args) {
+        int a = 1928;
+        System.out.println(a); // 1928
+        System.out.println(a % 10); // 8
+        System.out.println(a / 10); // 192
+
+        System.out.println(192 * 10 + 1928 % 10); // 1928
+    }
+
     public int reverse(int x) {
         int result = 0;
         while (x != 0) {
