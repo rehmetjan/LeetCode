@@ -34,4 +34,12 @@ class TwoSumTest {
         int[] result = twoSum.twoSum(nums, 6);
         assertArrayEquals(new int[]{0, 1}, result);
     }
+
+    @Test
+    public void test4() {
+        TwoSum twoSum = new TwoSum();
+        int[] nums = new int[]{3, 1, 6, 7, 13};
+        int[] result = twoSum.twoSum(nums, 10);
+        assertArrayEquals(new int[]{0, 3}, result);
+    }
 }
