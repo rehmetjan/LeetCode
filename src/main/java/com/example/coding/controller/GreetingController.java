@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.Date;
+
 /**
  * author: rt
  * Copyright (c) 2021 by rt
@@ -25,17 +27,18 @@ public class GreetingController {
     }
 
     @GetMapping("/greeting")
-    public String greeting(@RequestParam(name = "name", required = false, defaultValue = "World") String name, Model model) {
+    public String greeting(@RequestParam(name = "name", required = false, defaultValue = "LeetCode") String name, Model model) {
         int reverse = reverseInt.reverse(1982);
         model.addAttribute("greeting", new Greeting());
+        model.addAttribute("date", new Date());
         model.addAttribute("name", name);
         model.addAttribute("reverseNumber", reverse);
-        return "greeting";
+        return "pages/greeting";
     }
 
     @PostMapping("/greeting")
     public String greetingSubmit(@ModelAttribute Greeting greeting, Model model) {
         model.addAttribute("greeting", greeting);
-        return "result";
+        return "pages/result";
     }
 }
