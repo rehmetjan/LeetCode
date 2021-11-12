@@ -1,8 +1,14 @@
 package com.example.coding.controller;
 
+import com.example.coding.problems.leetcode.ReverseInt;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 /**
  * author: rt
@@ -12,13 +18,24 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class ReverseIntegerController {
 
+    Logger logger = LoggerFactory.getLogger(ReverseIntegerController.class);
+    ReverseInt reverseInt;
+
+    public ReverseIntegerController(ReverseInt reverseInt) {
+        this.reverseInt = reverseInt;
+    }
+
     @GetMapping("/reverseint")
     public String reverseInteger() {
         return "pages/reverseint";
     }
 
-    @PostMapping("/reverseint")
-    public String reverseIntegerPost() {
+    @PostMapping(value = "/reverseint")
+    public String reverseIntegerPost(@RequestBody String params, Model model) {
+        int number = Integer.parseInt(params.split("=")[1]);
+        int reverse = reverseInt.reverse(number);
+        logger.info(String.valueOf(reverse));
+        model.addAttribute("reverse", reverse);
         return "pages/reverseint";
     }
 }
