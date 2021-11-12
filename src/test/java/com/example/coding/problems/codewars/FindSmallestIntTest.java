@@ -39,7 +39,7 @@ class FindSmallestIntTest {
 
     @Test
     public void test2() {
-        int[] intArray = {-1,-4};
+        int[] intArray = {-1, -4};
         assertEquals(-4, FindSmallestInt.findSmallestInt(intArray));
     }
 

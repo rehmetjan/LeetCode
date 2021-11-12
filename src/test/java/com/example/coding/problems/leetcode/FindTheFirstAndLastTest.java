@@ -15,8 +15,8 @@ class FindTheFirstAndLastTest {
     @Test
     public void test1() {
         FindTheFirstAndLast findTheFirstAndLast = new FindTheFirstAndLast();
-        int[] nums ={
-            1, 2, 3, 4, 6, 6, 6, 6, 6, 7, 8, 9, 10
+        int[] nums = {
+                1, 2, 3, 4, 6, 6, 6, 6, 6, 7, 8, 9, 10
         };
 
         int target = 6;

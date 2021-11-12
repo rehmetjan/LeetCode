@@ -17,12 +17,14 @@ class FibonacciTest {
         int fib = fibonacci.fib(2);
         assertEquals(1, fib);
     }
+
     @Test
     public void test2() {
         Fibonacci fibonacci = new Fibonacci();
         int fib = fibonacci.fib(3);
         assertEquals(2, fib);
     }
+
     @Test
     public void test3() {
         Fibonacci fibonacci = new Fibonacci();

@@ -2,7 +2,7 @@ package com.example.coding.problems.newcoder;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * author: rt

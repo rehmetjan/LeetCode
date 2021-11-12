@@ -25,7 +25,7 @@ public class NumberOf2 {
         System.out.println(Math.pow(5, 3));
         System.out.println(Math.log(125));
         System.out.println(Integer.MAX_VALUE);
-        System.out.println(Math.pow(2,31));
+        System.out.println(Math.pow(2, 31));
         double v = Math.log(125) / Math.log(5);
         System.out.println(v);
         System.out.println(Math.log1p(25));

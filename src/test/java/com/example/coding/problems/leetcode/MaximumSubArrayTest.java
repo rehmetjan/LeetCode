@@ -15,7 +15,7 @@ class MaximumSubArrayTest {
     @Test
     public void test1() {
         MaximumSubArray maximumSubArray = new MaximumSubArray();
-        int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
+        int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
         int result = maximumSubArray.maxSubArray(nums);
         assertEquals(6, result);
     }

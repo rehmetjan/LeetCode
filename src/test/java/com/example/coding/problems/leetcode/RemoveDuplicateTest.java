@@ -13,14 +13,14 @@ class RemoveDuplicateTest {
     @Test
     public void test1() {
         RemoveDuplicate removeDuplicate = new RemoveDuplicate();
-        int[] nums = {1,1,2};
+        int[] nums = {1, 1, 2};
         assertEquals(2, removeDuplicate.removeDuplicates(nums));
     }
 
     @Test
     public void test2() {
         RemoveDuplicate removeDuplicate = new RemoveDuplicate();
-        int[] nums = {1,1,1,2,3,3,3,6,7,7}; // {1,2,3,6,7} 5
+        int[] nums = {1, 1, 1, 2, 3, 3, 3, 6, 7, 7}; // {1,2,3,6,7} 5
         assertEquals(5, removeDuplicate.removeDuplicates(nums));
     }
 }

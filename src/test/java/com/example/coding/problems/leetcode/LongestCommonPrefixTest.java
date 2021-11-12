@@ -2,7 +2,7 @@ package com.example.coding.problems.leetcode;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * author: rt
@@ -15,21 +15,21 @@ class LongestCommonPrefixTest {
     @Test
     public void test1() {
         LongestCommonPrefix solution = new LongestCommonPrefix();
-        String common = solution.longestCommonPrefix(new String[]{"flower","flow","flight"});
+        String common = solution.longestCommonPrefix(new String[]{"flower", "flow", "flight"});
         assertEquals("fl", common);
     }
 
     @Test
     public void test2() {
         LongestCommonPrefix solution = new LongestCommonPrefix();
-        String common = solution.longestCommonPrefix(new String[]{"dog","racecar","car"});
+        String common = solution.longestCommonPrefix(new String[]{"dog", "racecar", "car"});
         assertEquals("", common);
     }
 
     @Test
     public void test3() {
         LongestCommonPrefix solution = new LongestCommonPrefix();
-        String common = solution.longestCommonPrefix(new String[]{"computer","complete","company"});
+        String common = solution.longestCommonPrefix(new String[]{"computer", "complete", "company"});
         assertEquals("comp", common);
     }
 
