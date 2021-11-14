@@ -60,6 +60,11 @@ public class ReverseInt {
         System.out.println(a / 10); // 192
 
         System.out.println(192 * 10 + 1928 % 10); // 1928
+
+        ReverseInt reverseInt = new ReverseInt();
+        int reverse = reverseInt.reverse(Integer.MAX_VALUE);
+        System.out.println(reverse);
+
     }
 
     public int reverse(int x) {

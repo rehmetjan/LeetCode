@@ -2,13 +2,93 @@
 <html xmlns:th="https://www.thymeleaf.org" lang="zh-CN">
 <head>
     <div th:replace="fragments/head :: myHeader"></div>
+    <style>
+        .grid {
+            background-color: darkred;
+            width: 306px;
+            height: 306px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            border: #fff solid 1px;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .mole {
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
 <div th:replace="fragments/nav :: myNav">
 </div>
 <main role="main" class="container">
     <h1>Palindrome</h1>
+    <h2>Your score: </h2>
+    <h2 id="score">0</h2>
+    <h2>Time</h2>
+    <h2 id="time">0</h2>
+
+    <div class="grid">
+        <div class="square" id="1">1</div>
+        <div class="square" id="2">2</div>
+        <div class="square" id="3">3</div>
+        <div class="square" id="4">4</div>
+        <div class="square" id="5">5</div>
+        <div class="square" id="6">6</div>
+        <div class="square" id="7">7</div>
+        <div class="square" id="8">8</div>
+        <div class="square" id="9">9</div>
+    </div>
 
 </main>
+<script>
+    const scoreDisplay = document.querySelector('#score')
+    const time = document.querySelector('#time')
+    const squares = document.querySelectorAll('.square')
+    let molePosition
+    let score = 0
+    let currentTime = 5
+    let countDownTimerId
+    let moleTimerId
+
+    function moveHole() {
+        moleTimerId = setInterval(function () {
+             squares.forEach(s => s.classList.remove('mole'))
+            const randomSquare = squares[Math.floor(Math.random() * squares.length)]
+            randomSquare.classList.add('mole')
+            molePosition = randomSquare.id
+            console.log(molePosition)
+        }, 500)
+    }
+
+    moveHole()
+
+    squares.forEach(square => square.addEventListener('click', function () {
+        if (square.id === molePosition) {
+            score++
+            scoreDisplay.innerHTML = score.toString()
+        }
+    }))
+
+    function countDown() {
+        currentTime--
+        time.innerText = currentTime
+        if (currentTime === 0) {
+            clearInterval(countDownTimerId)
+            clearInterval(moleTimerId)
+        }
+    }
+
+    countDownTimerId = setInterval(countDown, 1000)
+
+</script>
 </body>
 </html>

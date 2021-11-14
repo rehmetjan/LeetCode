@@ -32,10 +32,14 @@ public class ReverseIntegerController {
 
     @PostMapping(value = "/reverseint")
     public String reverseIntegerPost(@RequestBody String params, Model model) {
-        int number = Integer.parseInt(params.split("=")[1]);
-        int reverse = reverseInt.reverse(number);
-        logger.info(String.valueOf(reverse));
-        model.addAttribute("reverse", reverse);
+        try {
+            int number = Integer.parseInt(params.split("=")[1]);
+            int reverse = reverseInt.reverse(number);
+            logger.info(String.valueOf(reverse));
+            model.addAttribute("reverse", reverse);
+        } catch (Exception e) {
+            model.addAttribute("reverse", e.getMessage());
+        }
         return "pages/reverseint";
     }
 }
