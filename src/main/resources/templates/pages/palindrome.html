@@ -55,7 +55,7 @@
     const squares = document.querySelectorAll('.square')
     let molePosition
     let score = 0
-    let currentTime = 5
+    let currentTime = 10
     let countDownTimerId
     let moleTimerId
 
@@ -84,6 +84,7 @@
         if (currentTime === 0) {
             clearInterval(countDownTimerId)
             clearInterval(moleTimerId)
+
         }
     }
 
