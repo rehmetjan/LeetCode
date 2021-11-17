@@ -33,13 +33,10 @@ public class ReverseString {
 
     public void reverseString(char[] s) {
         char temp;
-        int left = 0, right = s.length - 1;
-        while (left < right) { // left++, right--
+        for (int left = 0, right = s.length - 1; left < right; ++left, --right) { // left++, right--
             temp = s[left];
             s[left] = s[right];
             s[right] = temp;
-            ++left;
-            --right;
         }
     }
 }
