@@ -1,5 +1,7 @@
 package com.example.coding.problems.leetcode;
 
+import java.lang.management.GarbageCollectorMXBean;
+
 /**
  * author: rt
  * Copyright (c) 2021 by rt
@@ -30,10 +32,14 @@ public class ReverseString {
     }
 
     public void reverseString(char[] s) {
-        for (int left = 0, right = s.length - 1; left < right; ++left, --right) { // left++, right--
-            char temp = s[left];
+        char temp;
+        int left = 0, right = s.length - 1;
+        while (left < right) { // left++, right--
+            temp = s[left];
             s[left] = s[right];
             s[right] = temp;
+            ++left;
+            --right;
         }
     }
 }
