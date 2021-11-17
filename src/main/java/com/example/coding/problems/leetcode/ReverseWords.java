@@ -68,8 +68,7 @@ public class ReverseWords {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == ' ') {
                 reverse(array, start, i - 1);
-//                start = i +=1; // 更新start为下一个单词的左索引
-//                start = ++i; // 更新start为下一个单词的左索引
+//                start = i +=1; // start = ++i; // 更新start为下一个单词的左索引
                 start = i + 1; // 更新start为下一个单词的左索引
                 continue;
             }
@@ -85,12 +84,8 @@ public class ReverseWords {
             char temp = array[l];
             array[l] = array[r];
             array[r] = temp;
-            l++;
-//            l = l + 1;
-//            l += 1;
-            r--;
-//            r = r - 1;
-//            r -= 1;
+            l++; // l = l + 1; l += 1;
+            r--; // r = r - 1; r -= 1;
         }
     }
 }
