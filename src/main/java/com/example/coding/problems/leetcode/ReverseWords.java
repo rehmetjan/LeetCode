@@ -1,5 +1,7 @@
 package com.example.coding.problems.leetcode;
 
+import org.springframework.stereotype.Component;
+
 /**
  * author: rt
  * Copyright (c) 2021 by rt
@@ -23,6 +25,8 @@ package com.example.coding.problems.leetcode;
  * 链接：https://leetcode-cn.com/problems/reverse-words-in-a-string-iii
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
+
+@Component
 public class ReverseWords {
 
     public static void main(String[] args) {
