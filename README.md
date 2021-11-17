@@ -1,16 +1,12 @@
-# leetcode
+# LeetCode Coding (Java)
 
-#### 介绍
-My Leetcode Journey (OpenSource)
+My [LeetCode](https://leetcode-cn.com/u/rehmetjan/) Journey (OpenSource)
 problems and solution, with TDD
 
 https://leetcode-cn.com/u/rehmetjan/
 
-
-
 #### 软件架构
-软件架构说明
-
+Spring Boot Project
 
 #### 安装教程
 
@@ -20,14 +16,12 @@ https://leetcode-cn.com/u/rehmetjan/
 
 1.  每个文件都有测试
 
-
 #### 参与贡献
 
 1.  Fork 本仓库
 2.  新建 Feat_xxx 分支
 3.  提交代码
 4.  新建 Pull Request
-
 
 #### 特技
 
