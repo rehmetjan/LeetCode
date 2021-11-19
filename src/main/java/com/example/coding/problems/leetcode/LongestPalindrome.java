@@ -6,10 +6,11 @@ package com.example.coding.problems.leetcode;
  * All rights reserved.
  * 给你一个字符串 s，找到 s 中最长的回文子串。
  */
+
 public class LongestPalindrome {
 
     public static void main(String[] args) {
-        String s = LongestPalindrome.longestPalindrome("babad");
+        String s = LongestPalindrome.longestPalindrome("assalam");
         System.out.println(s);
     }
 
