@@ -9,6 +9,11 @@ package com.example.coding.problems.leetcode;
 
 public class LongestPalindrome {
 
+    public static void main(String[] args) {
+        String s = LongestPalindrome.longestPalindrome("seltenetler");
+        System.out.println(s);
+    }
+
     public static String longestPalindrome(String s) {
         if (s == null || s.length() < 1) {
             return "";
