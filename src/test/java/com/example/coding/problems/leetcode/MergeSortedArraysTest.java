@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
  * Copyright (c) 2021 by rt
  * All rights reserved.
  */
+
 class MergeSortedArraysTest {
 
     @Test
