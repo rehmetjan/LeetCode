@@ -7,6 +7,18 @@ package com.example.coding.problems.leetcode;
  */
 public class Palindrome {
 
+    public static void main(String[] args) {
+        Palindrome palindrome = new Palindrome();
+
+        for (int i = 0; i < 1000; i++) {
+            boolean result = palindrome.isPalindrome(i);
+//            System.out.printf("%d is %s%n",i, result);
+            if (result) {
+                System.out.println(i);
+            }
+        }
+    }
+
     public boolean isPalindrome(int x) {
         // 特殊情况：
         // 如上所述，当 x < 0 时，x 不是回文数。
