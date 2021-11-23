@@ -6,6 +6,13 @@ package com.example.coding.problems.leetcode;
  * All rights reserved.
  */
 public class MathMax {
+    public static void main(String[] args) {
+        MathMax mathMax = new MathMax();
+        System.out.println(mathMax.max(2, 5));
+        System.out.println(mathMax.max(6, 6));
+        System.out.println(mathMax.max(-6, -96));
+    }
+
     public int max(int i1, int i2) {
         if (i1 > i2) {
             return i1;
