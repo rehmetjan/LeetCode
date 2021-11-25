@@ -1,5 +1,7 @@
 package com.example.coding.algorithm.day01;
 
+import com.example.coding.problems.leetcode.BinarySearch;
+
 import java.util.Arrays;
 
 /**
@@ -32,7 +34,7 @@ import java.util.Arrays;
  * 链接：https://leetcode-cn.com/problems/binary-search
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class BinarySearch {
+public class BinarySearchTraining {
 
     public static void main(String[] args) {
         int result = search(new int[]{2, 3, 5, 7, 8, 9, 12, 34}, 12);
@@ -73,22 +75,8 @@ public class BinarySearch {
     }
 
     public static int search2(int[] nums, int target) {
-
-        int leftIndex = 0;
-        int rightIndex = nums.length - 1;
-
-        while (leftIndex <= rightIndex) {
-            int midpoint = (leftIndex + rightIndex) / 2;
-            if (target < nums[midpoint]) {
-                rightIndex = midpoint - 1;
-            } else if (target > nums[midpoint]) {
-                leftIndex = midpoint + 1;
-            } else {
-                return midpoint;
-            }
-        }
-
-        return -1;
+        BinarySearch binarySearch = new BinarySearch();
+        return binarySearch.search(nums, target);
     }
 
     public static int search(int[] nums, int target) {
