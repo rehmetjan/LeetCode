@@ -28,8 +28,9 @@ public class ReverseController {
      * Return reversed value of given String or words
      * http://localhost:8080/r?s=Mine+Kampf
      * return 'eniM fpmaK'
-     *
+     * <p>
      * //@param s
+     *
      * @return String
      */
     @GetMapping("/r")
@@ -46,8 +47,9 @@ public class ReverseController {
      * Return reversed value of given String or words
      * http://localhost:8080/r2?s=I+Love+You
      * return 'uoY evoL I'
-     *
+     * <p>
      * //@param s
+     *
      * @return String
      */
     @GetMapping("/r2")
