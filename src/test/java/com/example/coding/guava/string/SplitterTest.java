@@ -17,10 +17,9 @@ public class SplitterTest {
     @Test
     public void testSplitter() {
         List<String> stringList = Splitter.on(".").splitToList("net.selte.base");
-        for (String s : stringList) {
-            System.out.println(s);
-        }
-
+        stringList.forEach(System.out::println);
         assertEquals("net", stringList.get(0));
+        assertEquals("selte", stringList.get(1));
+        assertEquals("base", stringList.get(2));
     }
 }
