@@ -30,6 +30,15 @@ package com.example.coding.problems.leetcode;
  */
 
 public class ClimbingStairs {
+    public static void main(String[] args) {
+        ClimbingStairs cs = new ClimbingStairs();
+        System.out.println(cs.climbStairs(10));
+        System.out.println(cs.climbStairs(4));
+        System.out.println(cs.climbStairs(5));
+        System.out.println(cs.climbStairs(6));
+        System.out.println(cs.climbStairs(7));
+    }
+
     public int climbStairs(int n) {
         int p, q = 0, r = 1;
         for (int i = 1; i <= n; ++i) {
@@ -38,15 +47,6 @@ public class ClimbingStairs {
             r = p + q;
         }
         return r;
-    }
-
-    public static void main(String[] args) {
-        ClimbingStairs cs = new ClimbingStairs();
-        System.out.println(cs.climbStairs(10));
-        System.out.println(cs.climbStairs(4));
-        System.out.println(cs.climbStairs(5));
-        System.out.println(cs.climbStairs(6));
-        System.out.println(cs.climbStairs(7));
     }
 
 }
