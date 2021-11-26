@@ -54,6 +54,14 @@ package com.example.coding.problems.leetcode;
  */
 
 public class RemoveElement {
+    public static void main(String[] args) {
+        RemoveElement removeElement = new RemoveElement();
+
+        int[] nums = new int[]{1,2,3,4,7};
+        int e = removeElement.removeElement(nums, 7);
+        System.out.println(e);
+
+    }
     public int removeElement(int[] nums, int val) {
         int n = nums.length;
         int left = 0;
