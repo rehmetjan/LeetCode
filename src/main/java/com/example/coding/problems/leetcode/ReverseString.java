@@ -2,8 +2,6 @@ package com.example.coding.problems.leetcode;
 
 import org.springframework.stereotype.Component;
 
-import java.lang.management.GarbageCollectorMXBean;
-
 /**
  * author: rt
  * Copyright (c) 2021 by rt
