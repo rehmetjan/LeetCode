@@ -12,7 +12,7 @@ public class TestSome {
         char[] charArray = "Hello World".toCharArray();
         for (char c : charArray) {
             for (String s : "Hello World".split("")) {
-                System.out.println(s+s+c);
+                System.out.println(s + s + c);
             }
         }
 
