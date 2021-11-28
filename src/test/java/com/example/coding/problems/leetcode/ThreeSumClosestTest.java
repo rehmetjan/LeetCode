@@ -1,6 +1,9 @@
 package com.example.coding.problems.leetcode;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * author: rt
@@ -15,5 +18,6 @@ class ThreeSumClosestTest {
         int[] nums = new int[]{-1, 2, 1, -4};
         int target = 1;
         int result = klass.threeSumClosest(nums, target);
+        assertEquals(2, result);
     }
 }
