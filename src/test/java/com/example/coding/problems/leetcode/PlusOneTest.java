@@ -52,4 +52,18 @@ class PlusOneTest {
         Assertions.assertArrayEquals(expected, plusOne.plusOne(digits));
     }
 
+    @Test
+    void test3() {
+        int[] digits = new int[]{0};
+        int[] expected = new int[]{1};
+        Assertions.assertArrayEquals(expected, plusOne.plusOne(digits));
+    }
+
+    @Test
+    void test4() {
+        int[] digits = new int[]{9, 9, 9, 9};
+        int[] expected = new int[]{1, 0, 0, 0, 0};
+        Assertions.assertArrayEquals(expected, plusOne.plusOne(digits));
+    }
+
 }
