@@ -25,8 +25,18 @@ class ContainsDuplicateTest {
     }
 
     @Test
+    void test1Set() {
+        assertTrue(containsDuplicate.containsDup(nums1));
+    }
+
+    @Test
     void test2() {
         assertFalse(containsDuplicate.containsDuplicate(nums2));
+    }
+
+    @Test
+    void test2Set() {
+        assertFalse(containsDuplicate.containsDup(nums2));
     }
 
     @Test
@@ -35,7 +45,17 @@ class ContainsDuplicateTest {
     }
 
     @Test
+    void test3Set() {
+        assertTrue(containsDuplicate.containsDup(nums3));
+    }
+
+    @Test
     void test4() {
         assertFalse(containsDuplicate.containsDuplicate(nums4));
+    }
+
+    @Test
+    void test4Set() {
+        assertFalse(containsDuplicate.containsDup(nums4));
     }
 }

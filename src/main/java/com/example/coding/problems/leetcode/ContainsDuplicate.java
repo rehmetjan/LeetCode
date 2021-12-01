@@ -1,6 +1,8 @@
 package com.example.coding.problems.leetcode;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * author: rt
@@ -26,6 +28,16 @@ public class ContainsDuplicate {
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 1; i++) {
             if (nums[i] == nums[i + 1]) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean containsDup(int[] nums) {
+        Set<Integer> set = new HashSet<>();
+        for (int x : nums) {
+            if (!set.add(x)) {
                 return true;
             }
         }
