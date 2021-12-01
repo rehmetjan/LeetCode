@@ -20,7 +20,7 @@ Unit Test: JUnit 5.7.2
 
 1.  mvn spring-boot:run
 
-##Example
+## Example
 ### 217. Contains Duplicate
 https://leetcode-cn.com/problems/contains-duplicate/solution/
 
@@ -52,7 +52,7 @@ Output: true
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/contains-duplicate
 ```
-###write test first
+### write test first
 
 ```java
 import com.example.coding.problems.leetcode.ContainsDuplicate;
@@ -74,7 +74,7 @@ public class ContainsDuplicateTest {
     }
 }
 ```
-###这时候我们的class还是这样的
+### 这时候我们的class还是这样的
 `**注意：**`（还没有写code，只是生成了method and return false）:
 ```java
 public class ContainsDuplicate {
