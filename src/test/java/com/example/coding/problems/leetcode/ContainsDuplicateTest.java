@@ -12,20 +12,17 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  */
 class ContainsDuplicateTest {
 
+    ContainsDuplicate containsDuplicate = new ContainsDuplicate();
+    int[] nums1 = {1, 2, 3, 4, 1};
+    int[] nums2 = {1, 2, 3, 4};
 
     @Test
     void test1() {
-        ContainsDuplicate containsDuplicate = new ContainsDuplicate();
-        int[] nums = {1, 2, 3, 4, 1};
-        boolean result = containsDuplicate.containsDuplicate(nums);
-        assertTrue(result);
+        assertTrue(containsDuplicate.containsDuplicate(nums1));
     }
 
     @Test
     void test2() {
-        ContainsDuplicate containsDuplicate = new ContainsDuplicate();
-        int[] nums = {1, 2, 3, 4};
-        boolean result = containsDuplicate.containsDuplicate(nums);
-        assertFalse(result);
+        assertFalse(containsDuplicate.containsDuplicate(nums2));
     }
 }
