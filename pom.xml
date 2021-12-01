@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>coding</artifactId>
+    <artifactId>leetcode</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>coding</name>
     <description>Learning code, Algorithm from LeetCode, CodeWars, HackerRank and NewCoder</description>
