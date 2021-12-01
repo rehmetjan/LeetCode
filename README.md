@@ -75,7 +75,7 @@ public class ContainsDuplicateTest {
 }
 ```
 ### 这时候我们的class还是这样的
-`**注意：**`（还没有写code，只是生成了method and return false）:
+`注意：`（还没有写code，只是生成了method and return false）:
 ```java
 public class ContainsDuplicate {
     public boolean containsDuplicate(int[] nums) {
