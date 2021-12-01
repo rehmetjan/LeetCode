@@ -10,11 +10,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * Copyright (c) 2021 by rt
  * All rights reserved.
  */
+
 class ContainsDuplicateTest {
 
     ContainsDuplicate containsDuplicate = new ContainsDuplicate();
     int[] nums1 = {1, 2, 3, 4, 1};
     int[] nums2 = {1, 2, 3, 4};
+    int[] nums3 = {12, 21, 3, 12, 25};
+    int[] nums4 = {11, 2, 13, 4, 5};
 
     @Test
     void test1() {
@@ -24,5 +27,15 @@ class ContainsDuplicateTest {
     @Test
     void test2() {
         assertFalse(containsDuplicate.containsDuplicate(nums2));
+    }
+
+    @Test
+    void test3() {
+        assertTrue(containsDuplicate.containsDuplicate(nums3));
+    }
+
+    @Test
+    void test4() {
+        assertFalse(containsDuplicate.containsDuplicate(nums4));
     }
 }
