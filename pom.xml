@@ -11,7 +11,7 @@
     <groupId>net.selte</groupId>
     <artifactId>leetcode</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>coding</name>
+    <name>LeetCode</name>
     <description>Learning code, Algorithm from LeetCode, CodeWars, HackerRank and NewCoder</description>
     <properties>
         <java.version>1.8</java.version>
