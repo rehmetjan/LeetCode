@@ -55,11 +55,11 @@ Output: true
 ### write test first
 
 ```java
-import com.example.coding.problems.leetcode.ContainsDuplicate;
+import ContainsDuplicate;
 
 public class ContainsDuplicateTest {
 
-    ContainsDuplicate cd =new ContainsDuplicate();
+    ContainsDuplicate cd = new ContainsDuplicate();
 
     @Test
     public void test1() {
