@@ -1,7 +1,7 @@
 # Algorithms learning plan
 
 ## Day 1
-arrays, strings, binary searh
+arrays, strings, binary search
 ## Day 2
 hashmap
 ## Day 3
