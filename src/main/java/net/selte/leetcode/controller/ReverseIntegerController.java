@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-
 /**
  * author: rt
  * Copyright (c) 2021 by rt
  * All rights reserved.
  */
+
 @Controller
 public class ReverseIntegerController {
-
     Logger logger = LoggerFactory.getLogger(ReverseIntegerController.class);
+    // no need @Autowired here, constructor inject
     ReverseInt reverseInt;
 
     public ReverseIntegerController(ReverseInt reverseInt) {
