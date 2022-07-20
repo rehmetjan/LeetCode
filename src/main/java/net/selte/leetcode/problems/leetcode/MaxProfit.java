@@ -1,5 +1,8 @@
 package net.selte.leetcode.problems.leetcode;
 
+import lombok.extern.slf4j.Slf4j;
+import net.selte.leetcode.vo.Student;
+
 import java.sql.Timestamp;
 import java.util.Date;
 
@@ -8,6 +11,7 @@ import java.util.Date;
  * Copyright (c) 2022 by rt
  * All rights reserved.
  */
+@Slf4j
 public class MaxProfit {
 
     /**
@@ -54,9 +58,28 @@ public class MaxProfit {
 
     public static void main(String[] args) {
         Date date = new Date();
-        Timestamp timestamp = new Timestamp(date.getTime());
-        System.out.println(date.toInstant());
-        System.out.println(timestamp);
-        System.out.println(System.currentTimeMillis());
+        Student student = getStudent();
+
+        int[] prices = {7, 1, 5, 3, 6, 4};
+        MaxProfit maxProfit = new MaxProfit();
+        int i = maxProfit.maxProfit(prices);
+        System.out.println("Max Profit");
+        System.out.println(i);
+
+        log.info("The Max profit from {} is {}", prices, i);
+        log.info("A student created at" +
+                "\n\t{}," +
+                "\n\tName: {}, " +
+                "\n\tAge: {}",
+                date,
+                student.getName(),
+                student.getAge());
+    }
+
+    private static Student getStudent() {
+        Student student = new Student();
+        student.setName("Charles");
+        student.setAge(20);
+        return student;
     }
 }
