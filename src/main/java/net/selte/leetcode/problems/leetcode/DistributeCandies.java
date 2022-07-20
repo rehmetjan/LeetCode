@@ -1,7 +1,6 @@
 package net.selte.leetcode.problems.leetcode;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -44,13 +43,11 @@ import java.util.Set;
  * -105 <= candyType[i] <= 105
  * <p>
  * 来源：力扣（LeetCode）
- * 链接：https://leetcode-cn.com/problems/distribute-candies
+ * 链接：<a href="https://leetcode-cn.com/problems/distribute-candies">...</a>
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-
+@Slf4j
 public class DistributeCandies {
-
-    Logger logger = LoggerFactory.getLogger(DistributeCandies.class);
 
     public static void main(String[] args) {
         int[] candyType = {1, 1, 2, 2, 3, 3};
@@ -60,15 +57,15 @@ public class DistributeCandies {
     }
 
     public int distributeCandies(int[] candyType) {
-        logger.info("Given: " + Arrays.toString(candyType)
+        log.info("Given: " + Arrays.toString(candyType)
                 + " Length: " + candyType.length);
         Set<Integer> set = new HashSet<>();
         for (int candy : candyType) {
             set.add(candy);
         }
         int getHalf = candyType.length / 2;
-        logger.info("(candyType.length) " + candyType.length + " / 2 = " + getHalf);
-        logger.info("Now the set is: " + set);
+        log.info("(candyType.length) " + candyType.length + " / 2 = " + getHalf);
+        log.info("Now the set is: " + set);
         System.out.println("------------End------------");
         return Math.min(set.size(), getHalf);
     }

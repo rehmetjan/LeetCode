@@ -1,8 +1,7 @@
 package net.selte.leetcode.problems.leetcode;
 
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -12,16 +11,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * All rights reserved.
  */
 
+@Slf4j
 class DistributeCandiesTest {
-
-    Logger logger = LoggerFactory.getLogger(DistributeCandiesTest.class);
 
     @Test
     public void test1() {
         DistributeCandies distributeCandies = new DistributeCandies();
         int[] candyType = {1, 1, 2, 2, 3, 3};
         int candies = distributeCandies.distributeCandies(candyType);
-        logger.info("Actual candies " + candies);
+        log.info("Actual candies " + candies);
         assertEquals(3, candies);
     }
 
@@ -30,7 +28,7 @@ class DistributeCandiesTest {
         DistributeCandies distributeCandies = new DistributeCandies();
         int[] candyType = {1, 1, 2, 3};
         int candies = distributeCandies.distributeCandies(candyType);
-        logger.info("Actual candies " + candies);
+        log.info("Actual candies " + candies);
         assertEquals(2, candies);
     }
 
@@ -39,7 +37,7 @@ class DistributeCandiesTest {
         DistributeCandies distributeCandies = new DistributeCandies();
         int[] candyType = {6, 6, 6, 6};
         int candies = distributeCandies.distributeCandies(candyType);
-        logger.info("Actual candies " + candies);
+        log.info("Actual candies " + candies);
         assertEquals(1, candies);
     }
 

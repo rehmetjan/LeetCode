@@ -1,16 +1,13 @@
 package net.selte.leetcode.problems.leetcode;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import lombok.extern.slf4j.Slf4j;
 /**
  * author: rt
  * Copyright (c) 2021 by rt
  * All rights reserved.
  */
+@Slf4j
 public class RotateArray {
-    Logger logger = LoggerFactory.getLogger(RotateArray.class);
-
     public static void main(String[] args) {
         System.out.println(11 % 7); //4
         System.out.println(46 % 11); //2
@@ -26,7 +23,7 @@ public class RotateArray {
         for (int i = 0; i < length; i++) {
             int ik = i + k;
             int ikl = ik % length;
-            logger.info("i + k = " + ik + ", i + k % length =" + ikl % length);
+            log.info("i + k = " + ik + ", i + k % length =" + ikl % length);
 
             ints[(i + k) % length] = nums[i];
         }

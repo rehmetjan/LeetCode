@@ -26,7 +26,7 @@ public class ReverseController {
 
     /**
      * Return reversed value of given String or words
-     * http://localhost:8080/r?s=Mine+Kampf
+     * <a href="http://localhost:8080/r?s=Mine+Kampf">...</a>
      * return 'eniM fpmaK'
      * <p>
      * //@param s
@@ -45,7 +45,7 @@ public class ReverseController {
 
     /**
      * Return reversed value of given String or words
-     * http://localhost:8080/r2?s=I+Love+You
+     * <a href="http://localhost:8080/r2?s=I+Love+You">...</a>
      * return 'uoY evoL I'
      * <p>
      * //@param s
