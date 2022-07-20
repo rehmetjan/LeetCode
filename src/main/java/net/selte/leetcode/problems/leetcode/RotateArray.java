@@ -1,6 +1,7 @@
 package net.selte.leetcode.problems.leetcode;
 
 import lombok.extern.slf4j.Slf4j;
+
 /**
  * author: rt
  * Copyright (c) 2021 by rt

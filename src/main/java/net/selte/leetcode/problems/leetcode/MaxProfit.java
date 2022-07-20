@@ -13,6 +13,33 @@ import java.util.Date;
 @Slf4j
 public class MaxProfit {
 
+    public static void main(String[] args) {
+        Date date = new Date();
+        Student student = getStudent();
+
+        int[] prices = {7, 1, 5, 3, 6, 4};
+        MaxProfit maxProfit = new MaxProfit();
+        int i = maxProfit.maxProfit(prices);
+        System.out.println("Max Profit");
+        System.out.println(i);
+
+        log.info("The Max profit from {} is {}", prices, i);
+        log.info("A student created at" +
+                        "\n\t{}," +
+                        "\n\tName: {}, " +
+                        "\n\tAge: {}",
+                date,
+                student.getName(),
+                student.getAge());
+    }
+
+    private static Student getStudent() {
+        Student student = new Student();
+        student.setName("Charles");
+        student.setAge(20);
+        return student;
+    }
+
     /**
      * 给定一个数组 prices ，它的第i 个元素prices[i] 表示一支给定股票第 i 天的价格。
      * <p>
@@ -53,32 +80,5 @@ public class MaxProfit {
             }
         }
         return maxprofit;
-    }
-
-    public static void main(String[] args) {
-        Date date = new Date();
-        Student student = getStudent();
-
-        int[] prices = {7, 1, 5, 3, 6, 4};
-        MaxProfit maxProfit = new MaxProfit();
-        int i = maxProfit.maxProfit(prices);
-        System.out.println("Max Profit");
-        System.out.println(i);
-
-        log.info("The Max profit from {} is {}", prices, i);
-        log.info("A student created at" +
-                        "\n\t{}," +
-                        "\n\tName: {}, " +
-                        "\n\tAge: {}",
-                date,
-                student.getName(),
-                student.getAge());
-    }
-
-    private static Student getStudent() {
-        Student student = new Student();
-        student.setName("Charles");
-        student.setAge(20);
-        return student;
     }
 }

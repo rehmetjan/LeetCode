@@ -49,7 +49,7 @@ package net.selte.leetcode.problems.leetcode;
  * 0 <= val <= 100
  * <p>
  * 来源：力扣（LeetCode）
- * 链接：https://leetcode-cn.com/problems/remove-element
+ * 链接：<a href="https://leetcode-cn.com/problems/remove-element">...</a>
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
@@ -57,11 +57,12 @@ public class RemoveElement {
     public static void main(String[] args) {
         RemoveElement removeElement = new RemoveElement();
 
-        int[] nums = new int[]{1,2,3,4,7};
+        int[] nums = new int[]{1, 2, 3, 4, 7};
         int e = removeElement.removeElement(nums, 7);
         System.out.println(e);
 
     }
+
     public int removeElement(int[] nums, int val) {
         int n = nums.length;
         int left = 0;
