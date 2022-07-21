@@ -8,6 +8,7 @@ package net.selte.leetcode.problems.leetcode;
 
 public class SingleNumber {
     public int singleNumber(int[] nums) {
+        // XOR
         int single = 0;
         for (int num : nums) {
             single ^= num;
