@@ -1,5 +1,6 @@
 package net.selte.leetcode.entity;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 /**
@@ -8,6 +9,7 @@ import lombok.Data;
  * All rights reserved.
  */
 @Data
+@TableName("video")
 public class Video {
  private Long id;
  private String name;
