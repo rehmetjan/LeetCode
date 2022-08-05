@@ -16,8 +16,6 @@ import org.springframework.stereotype.Component;
 @Order(1)
 public class StartPreLoading implements CommandLineRunner {
 
-//    @Autowired
-//    VideoMapper videoMapper;
     @Override
     public void run(String... args) {
         log.info("StartPreLoading ...");
@@ -26,9 +24,6 @@ public class StartPreLoading implements CommandLineRunner {
             video.setName("Video " + i);
             video.setSeconds(900L);
             log.info(video.getName());
-//            videoMapper.insert(video);
-
         }
-
     }
 }
