@@ -3,10 +3,8 @@ package net.selte.leetcode.controller;
 import lombok.extern.slf4j.Slf4j;
 import net.selte.leetcode.entity.Department;
 import net.selte.leetcode.service.IDepartmentService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import net.selte.leetcode.vo.Result;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -29,7 +27,18 @@ public class DepartmentController {
     @GetMapping("/list")
     public List<Department> list() {
         return departmentService.list();
-//        return null;
+    }
+
+    @GetMapping("/{id}")
+    public Department getOne(@PathVariable String id) {
+        Department department = departmentService.getById(id);
+        return department;
+    }
+
+    @PostMapping("/add")
+    public Result<?> add(@RequestBody Department department) {
+        departmentService.save(department);
+        return Result.ok("Saved");
     }
 
 }
