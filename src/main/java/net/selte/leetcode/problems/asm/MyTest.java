@@ -11,10 +11,19 @@ public class MyTest {
         MyTest myTest = new MyTest();
         String simon = myTest.simon();
         if (simon.equals(a)) System.out.println("EQUALS");
-        if (simon == a) System.out.println("==");
+        if (a.equals(simon)) System.out.println("==");
         for (char c : simon.toCharArray()) {
             System.out.println(c);
         }
+
+        String charles = myTest.myName("Charles");
+        System.out.println("charles = " + charles);
+        System.out.println("myName() = " + myTest.myName("Richard"));
+    }
+
+    private String myName(String name) {
+        System.out.println("name = " + name);
+        return "Mr." + name;
     }
 
     private String simon() {
