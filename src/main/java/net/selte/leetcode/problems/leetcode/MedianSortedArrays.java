@@ -1,5 +1,7 @@
 package net.selte.leetcode.problems.leetcode;
 
+import java.util.Arrays;
+
 /**
  * author: rt
  * Copyright (c) 2021 by rt
@@ -40,6 +42,31 @@ package net.selte.leetcode.problems.leetcode;
  */
 
 public class MedianSortedArrays {
+
+    public static void main(String[] args) {
+        int[] m = {1,2,3,4,5,6,7};
+        int[] n = {1,2,3,4,5,6};
+
+        int lengthOfM = m.length;
+        int lengthOfN = n.length;
+
+        for (int i = 0; i < m.length; i++) {
+//            System.out.println("m[i] = " + m[i]);
+        }
+        for (int i = 0; i < n.length; i++) {
+//            System.out.println("n[i] = " + n[i]);
+        }
+
+        System.out.println("m = " + Arrays.toString(m));
+        System.out.println("n = " + Arrays.toString(n));
+        System.out.println("lengthOfM = " + lengthOfM);
+        System.out.println("lengthOfN = " + lengthOfN);
+        int lengthOfMN = lengthOfN + lengthOfM;
+        int midMN = lengthOfMN / 2;
+        System.out.println("midMN = " + midMN);
+
+
+    }
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int length1 = nums1.length, length2 = nums2.length;
         int totalLength = length1 + length2;
