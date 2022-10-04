@@ -46,7 +46,10 @@ public class MergeKListNodes {
         ListNode head = new ListNode(0);
         ListNode cur = head;
         for (ListNode node : nodes) {
-            cur = cur.next = node;
+            cur.next = node;
+            cur = cur.next;
+            // this can simplify with below
+            //cur = cur.next = node;
         }
         return head.next;
     }
