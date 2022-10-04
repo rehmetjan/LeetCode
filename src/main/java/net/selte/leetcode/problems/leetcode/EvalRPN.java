@@ -80,14 +80,12 @@ public class EvalRPN {
 
         for (String token : tokens) {
             switch (token) {
-                case "+": {
+                case "+":
                     stack.push(stack.pop() + stack.pop());
                     break;
-                }
-                case "*": {
+                case "*":
                     stack.push(stack.pop() * stack.pop());
                     break;
-                }
                 case "-": {
                     Integer right = stack.pop();
                     Integer left = stack.pop();
@@ -100,10 +98,9 @@ public class EvalRPN {
                     stack.push(left / right);
                     break;
                 }
-                default: {
+                default:
                     stack.push(Integer.parseInt(token));
                     break;
-                }
             }
         }
         return stack.pop();
