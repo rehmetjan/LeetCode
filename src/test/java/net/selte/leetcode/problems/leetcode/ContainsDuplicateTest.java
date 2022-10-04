@@ -14,48 +14,24 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class ContainsDuplicateTest {
 
     ContainsDuplicate containsDuplicate = new ContainsDuplicate();
-    int[] nums1 = {1, 2, 3, 4, 1};
-    int[] nums2 = {1, 2, 3, 4};
-    int[] nums3 = {12, 21, 3, 12, 25};
-    int[] nums4 = {11, 2, 13, 4, 5};
+    int[] nums1_true = {1, 2, 3, 4, 1};
+    int[] nums2_false = {1, 2, 3, 4};
+    int[] nums3_true = {12, 21, 3, 12, 25};
+    int[] nums4_false = {11, 2, 13, 4, 5};
 
     @Test
-    void test1() {
-        assertTrue(containsDuplicate.containsDuplicate(nums1));
+    void testSortedArray() {
+        assertTrue(containsDuplicate.containsDuplicate(nums1_true));
+        assertFalse(containsDuplicate.containsDuplicate(nums2_false));
+        assertTrue(containsDuplicate.containsDuplicate(nums3_true));
+        assertFalse(containsDuplicate.containsDuplicate(nums4_false));
     }
 
     @Test
-    void test1Set() {
-        assertTrue(containsDuplicate.containsDup(nums1));
-    }
-
-    @Test
-    void test2() {
-        assertFalse(containsDuplicate.containsDuplicate(nums2));
-    }
-
-    @Test
-    void test2Set() {
-        assertFalse(containsDuplicate.containsDup(nums2));
-    }
-
-    @Test
-    void test3() {
-        assertTrue(containsDuplicate.containsDuplicate(nums3));
-    }
-
-    @Test
-    void test3Set() {
-        assertTrue(containsDuplicate.containsDup(nums3));
-    }
-
-    @Test
-    void test4() {
-        assertFalse(containsDuplicate.containsDuplicate(nums4));
-    }
-
-    @Test
-    void test4Set() {
-        assertFalse(containsDuplicate.containsDup(nums4));
+    void testSet() {
+        assertTrue(containsDuplicate.containsDup(nums1_true));
+        assertFalse(containsDuplicate.containsDup(nums2_false));
+        assertTrue(containsDuplicate.containsDup(nums3_true));
+        assertFalse(containsDuplicate.containsDup(nums4_false));
     }
 }
