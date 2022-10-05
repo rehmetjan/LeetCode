@@ -33,6 +33,7 @@ public class MergeKListNodes {
 
     }
 
+
     public static ListNode mergeKLists(ListNode[] lists) {
         List<ListNode> nodes = new ArrayList<>();
         for (ListNode list : lists) {
