@@ -46,5 +46,4 @@ public class SortAnArray {
         nums[i] = nums[j];
         nums[j] = temp;
     }
-
 }
