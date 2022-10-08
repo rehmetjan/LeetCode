@@ -9,6 +9,18 @@ import java.util.Arrays;
  */
 public class SortTheArray {
 
+
+    public static void main(String[] args) {
+        int[] nums = {5, 2, 3, 1};
+        SortTheArray solution = new SortTheArray();
+        int[] res = solution.sortArray(nums);
+        System.out.println(Arrays.toString(res));
+
+        int[] ints = solution.sortArray2(nums);
+        System.out.println("ints = " + Arrays.toString(ints));
+
+    }
+
     // 选择排序：每一轮选择最小元素交换到未排定部分的开头
 
     public int[] sortArray(int[] nums) {
@@ -33,33 +45,23 @@ public class SortTheArray {
         nums[index2] = temp;
     }
 
-    public static void main(String[] args) {
-        int[] nums = {5, 2, 3, 1};
-        SortTheArray solution = new SortTheArray();
-        int[] res = solution.sortArray(nums);
-        System.out.println(Arrays.toString(res));
-
-        int[] ints = solution.sortArray2(nums);
-        System.out.println("ints = " + Arrays.toString(ints));
-
-    }
 
     public int[] sortArray2(int[] nums) {
         if (nums.length <= 1) {
             return nums;
         }
-        for(int i = 1; i < nums.length; i++) {
+        for (int i = 1; i < nums.length; i++) {
             int value = nums[i];
             int j = i - 1;
             while (j >= 0) {
                 if (nums[j] > value) {
-                    nums[j+1] = nums[j];
+                    nums[j + 1] = nums[j];
                 } else {
                     break;
                 }
                 j -= 1;
             }
-            nums[j+1] = value;
+            nums[j + 1] = value;
         }
         return nums;
     }
