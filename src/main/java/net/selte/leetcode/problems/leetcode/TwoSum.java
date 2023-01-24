@@ -30,8 +30,6 @@ public class TwoSum {
 
         System.out.println("result = " + Arrays.toString(result));
 
-
-
     }
 
     public static int[] twoSumNew(int[] arr, int target) {
