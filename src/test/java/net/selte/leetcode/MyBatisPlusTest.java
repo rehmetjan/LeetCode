@@ -1,12 +1,9 @@
 package net.selte.leetcode;
 
-import net.selte.leetcode.entity.Video;
 import net.selte.leetcode.mapper.VideoMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.List;
 
 /**
  * @author rt
@@ -21,7 +18,8 @@ public class MyBatisPlusTest {
 
     @Test
     public void testSelectList() {
-        List<Video> videos = videoMapper.selectList(null);
-        videos.forEach(System.out::println);
+//        List<Video> videos = videoMapper.selectList(null);
+//        videos.forEach(System.out::println);
+
     }
 }
