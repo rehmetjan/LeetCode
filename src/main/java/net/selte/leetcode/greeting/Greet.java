@@ -11,4 +11,11 @@ import lombok.Data;
 public class Greet {
 	private String message;
 	private String name;
+	private String greeting;
+
+	public Greet(String message, String name) {
+		this.message = message;
+		this.name = name;
+		this.greeting = message + " " + name;
+	}
 }
