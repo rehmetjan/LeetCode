@@ -47,4 +47,11 @@ class BinarySearchTest {
         int[] nums = {1, 2, 3};
         assertEquals(1, binarySearch.search(nums, 2));
     }
+
+    @Test
+    public void test4() {
+        BinarySearch binarySearch = new BinarySearch();
+        int[] nums = {1, 2, 3};
+        assertEquals(-1, binarySearch.search(nums, 4));
+    }
 }
